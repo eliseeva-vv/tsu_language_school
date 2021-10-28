@@ -1,0 +1,93 @@
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #fff;
+  color: #2E2F22;
+  font-weight: normal;
+  min-width: 1240px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-wrapper {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Шапка сайта */
+
+.social-link {
+  font-size: 18px;
+  line-height: 25px;
+  color: #2E2F22;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.social-link:hover {
+  color: #ACC5D8;
+  transition: all 0.5s ease;
+}
+
+.social-link:active {
+  color: #ACC5D8B3;
+  transition: all 0.5s ease;
+}
+
+.page-header {
+  background-image: url(../files/children_learn_english.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 960px;
+}
+
+.page-header .content-container {
+  flex-direction: row;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-header-heading {
+  font-family: 'Spectral SC', Times New Roman, serif;
+  font-size: 65px;
+  line-height: 65px;
+  margin: 0;
+  color: white;
+}
+
+/* Карта проезда */
+
+#wrapMap {
+    position: relative;
+    cursor: help;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+}
+.mapTitle {
+    position: absolute;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+    display: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+}
