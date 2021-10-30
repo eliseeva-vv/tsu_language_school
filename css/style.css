@@ -1,3 +1,12 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
@@ -27,6 +36,20 @@ img {
 
 /* Шапка сайта */
 
+.social-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .social-link {
   font-size: 18px;
   line-height: 25px;
@@ -45,9 +68,33 @@ img {
   transition: all 0.5s ease;
 }
 
+.phone:before {
+  content: "";
+  background-image: url(../img/phone.svg);
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contacts_list_item_paragraph {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.contacts_list_item_paragraph:active {
+
+}
+
+.contacts_list_item_paragraph:hover {
+
+}
+
 .page-header {
   background-image: url(../files/children_learn_english.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   height: 960px;
 }
