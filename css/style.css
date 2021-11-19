@@ -5,8 +5,9 @@
   --basic-white: #FFFAFA;
 --basic-blue: #003153;
 --basic-extra-blue: #002F55;
+--basic-red: #E63244;
 
-  --special: ;
+  --special: #ED760E;
 }
 
 .visually-hidden {
@@ -41,18 +42,6 @@ img {
   height: auto;
 }
 
-.content-wrapper {
-  width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-}
-
 /* Main navigation */
 
 .main-navigation {
@@ -85,38 +74,6 @@ img {
 
 /* Шапка сайта */
 
-.social-nav {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.social-link {
-  font-size: 18px;
-  line-height: 25px;
-  color: #2E2F22;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
-.social-link:hover {
-  color: #ACC5D8;
-  transition: all 0.5s ease;
-}
-
-.social-link:active {
-  color: #ACC5D8B3;
-  transition: all 0.5s ease;
-}
-
 .phone:before {
   content: "";
   background-image: url(../img/phone.svg);
@@ -126,6 +83,10 @@ img {
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.contacts-list {
+  list-style: none;
 }
 
 .contacts_list_item_paragraph {
@@ -178,6 +139,46 @@ img {
   line-height: 42px;
 }
 
+/* News */
+
+.news-list {
+  list-style: none;
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--special);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-black);
+}
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
 /* Карта проезда */
 
 #wrapMap {
@@ -201,4 +202,44 @@ img {
     border-style: solid;
     border-color: rgb(204, 204, 204);
     border-image: initial;
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.main-footer a {
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+  color: var(--special);
+}
+
+.footer_navigation_list {
+  list-style: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-white);
 }
