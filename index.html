@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <title>Языковая школа ТГУ</title>
   <meta charset="utf-8">
   <meta name="keywords" content="языковая, школа, тгу, тольятти">
@@ -190,21 +190,19 @@
 
     <section class="contacts">
       <h2>Карта и контакты</h2>
-      <div id="wrapMap">
-        <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A56fdf04859fbeb9d701a491e3e36588745e0238a2c58a8ba6bc4b059d46c3eae&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
-      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.2906057378714!2d49.39608431584419!3d53.49900398001134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41687ed469d9d1f7%3A0x346fd65a52389acb!2z0JHQtdC70L7RgNGD0YHRgdC60LDRjyDRg9C7LiwgMTbQkiwg0KLQvtC70YzRj9GC0YLQuCwg0KHQsNC80LDRgNGB0LrQsNGPINC-0LHQuy4sIDQ0NTAyMA!5e0!3m2!1sru!2sru!4v1637436229860!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <div class="contacts_container">
         <ul class="contacts-list">
           <li class="contacts_list_item">
-            <p>Приходите к нам:</p>
+            <p><span>Приходите к нам:</span></p>
             <p>г. Тольятти, ул. Белорусская, д. 16В, корпус УЛК, ауд. 711</p>
           </li>
           <li class="contacts_list_item">
-            <p>Позвоните нам:</p>
+            <p><span>Позвоните нам:</span></p>
             <p><a class="contacts-phone" href="tel:+79370758163">+7 (937) 075-81-63</a></p>
           </li>
           <li class="contacts_list_item">
-            <p>Напишите нам:</p>
+            <p><span>Напишите нам:</span></p>
             <p><a class="contacts-mail" href="mailto:yaz_tgu@mail.ru">yaz_tgu@mail.ru</a></p>
           </li>
         </ul>
@@ -218,66 +216,37 @@
       <a>
         <img src="img/index-logo.svg" width="100" height="" alt="Языковая школа ТГУ">
       </a>
-      <ul class="footer_navigation_list">
-        <li class="footer_navigation_list_item">
+      <ul>
+        <li>
           <a href="">Курсы</a>
         </li>
-        <li class="footer_navigation_list_item">
+        <li>
           <a href="">Студентам ТГУ</a>
         </li>
-        <li class="list-item">
-          <a href="#" class="item-link">Новости</a>
+        <li>
+          <a href="#">Новости</a>
         </li>
-        <li class="list-item">
-          <a href="#" class="item-link">Фотогалерея</a>
-        <li class="footer_navigation_list_item">
+        <li>
+          <a href="#">Фотогалерея</a>
+        <li>
           <a href="">Контакты</a>
         </li>
       </ul>
     </nav>
+
     <ul class="footer-socials">
       <li class="social-link">
-        <a class="social-link" href="https://vk.com/yaz_tgu">
+        <a href="https://vk.com/yaz_tgu">
           <img src="img/vk.svg" alt="Вконтакте" width="35px" height="35px">
         </a>
       </li>
       <li class="social-link">
-        <a class="social-link" href="https://www.instagram.com/yaz_tgu/"><img src="img/instagram.svg" alt="Инстаграм" width="35px" height="35px">
+        <a href="https://www.instagram.com/yaz_tgu/"><img src="img/instagram.svg" alt="Инстаграм" width="35px" height="35px">
         </a>
       </li>
     </ul>
   </footer>
 
 </body>
-
-<script>
-  // создаём элемент <div>, который будем перемещать вместе с указателем мыши пользователя
-  let mapTitle = document.createElement('div');
-  mapTitle.className = 'mapTitle';
-  // вписываем нужный нам текст внутрь элемента
-  mapTitle.textContent = 'Для активации карты нажмите на неё';
-  // добавляем элемент с подсказкой последним элементов внутрь нашего <div> с id wrapMap
-  wrapMap.appendChild(mapTitle);
-  // по клику на карту
-  wrapMap.onclick = function() {
-    // убираем атрибут "style", в котором прописано свойство "pointer-events"
-    this.children[0].removeAttribute('style');
-    // удаляем элемент с интерактивной подсказкой
-    mapTitle.parentElement.removeChild(mapTitle);
-  }
-  // по движению мыши в области карты
-  wrapMap.onmousemove = function(event) {
-    // показываем подсказку
-    mapTitle.style.display = 'block';
-    // двигаем подсказку по области карты вместе с мышкой пользователя
-    if (event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
-    if (event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
-  }
-  // при уходе указателя мыши с области карты
-  wrapMap.onmouseleave = function() {
-    // прячем подсказку
-    mapTitle.style.display = 'none';
-  }
-</script>
 
 </html>
