@@ -21,7 +21,7 @@
 
 /* Global */
 
-body {
+.page-body {
   min-width: 1240px;
   margin: 0;
   padding: 0;
@@ -103,25 +103,27 @@ img {
 
 }
 
-.page-header {
-  background-image: url(../files/children_learn_english.jpg);
-  background-repeat: no-repeat;
-  height: 960px;
-}
-
-.page-header .content-container {
+.main-header .content-container {
   flex-direction: row;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.page-header-heading {
+.main-header-heading {
   font-family: 'Spectral SC', Times New Roman, serif;
   font-size: 65px;
   line-height: 65px;
   margin: 0;
   color: white;
+}
+
+/* Main screen */
+
+.main_screen {
+  background-image: url(../files/children_learn_english.jpg);
+  background-repeat: no-repeat;
+  height: 960px;
 }
 
 /* Courses */
