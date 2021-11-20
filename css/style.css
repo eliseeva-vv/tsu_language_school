@@ -99,7 +99,7 @@ img {
 }
 
 .main-header-heading {
-  font-family: 'Spectral SC', Times New Roman, serif;
+  font-family: 'Playfair Display', Times New Roman, serif;
   font-size: 65px;
   line-height: 65px;
   margin: 0;
@@ -114,30 +114,12 @@ img {
 }
 
 h1 {
-  font-family: 'Spectral SC', Georgia, serif;
-  font-size: 50px;
-  line-height: 46px;
+  font-family: 'Playfair Display', Times New Roman, serif;
+  font-size: 80px;
+  line-height: 76px;
   font-weight: 700;
   color: var(--basic-white);
-}
-
-/* Courses */
-.courses-list {
-  list-style: none;
-}
-
-.courses-item {
-  text-align: center;
-}
-
-.courses-item h3 {
-  font-size: 30px;
-  line-height: 42px;
-}
-
-/* News */
-.news-list {
-  list-style: none;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Button */
@@ -151,12 +133,11 @@ h1 {
   border: none;
   border-radius: 30px;
   padding: 10px;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover,
-.button:focus,
-.button:active {
+.button:focus {
   background-color: var(--special);
 }
 
@@ -165,6 +146,74 @@ h1 {
   cursor: default;
   opacity: 0.5;
   background-color: var(--basic-black);
+}
+
+/* Courses */
+.courses h2 {
+  font-family: 'Spectral SC', Georgia, serif;
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.courses-list {
+  list-style: none;
+}
+
+.courses-item {
+  text-align: center;
+}
+
+.courses-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+/* Students */
+
+.students {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.students h2 {
+  font-family: 'Spectral SC', Georgia, serif;
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.students span {
+  font-weight: 700;
+}
+
+/* News */
+.news h2 {
+  font-family: 'Spectral SC', Georgia, serif;
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-link {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.news-link:hover,
+.news-link:focus {
+  background-color: var(--special);
 }
 
 /* Contacts */
