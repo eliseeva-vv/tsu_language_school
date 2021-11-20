@@ -1,12 +1,10 @@
 /* Variables */
-
 :root {
   --basic-black: #0A0A0A;
   --basic-white: #FFFAFA;
---basic-blue: #003153;
---basic-extra-blue: #002F55;
---basic-red: #E63244;
-
+  --basic-blue: #003153;
+  --basic-extra-blue: #002F55;
+  --basic-red: #E63244;
   --special: #ED760E;
 }
 
@@ -20,7 +18,6 @@
 }
 
 /* Global */
-
 .page-body {
   min-width: 1240px;
   margin: 0;
@@ -29,7 +26,7 @@
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-color: var(--basic-black);
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
@@ -43,13 +40,6 @@ img {
 }
 
 /* Main navigation */
-
-.main-navigation {
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--basic-white);
-}
-
 .main-navigation-wrapper {
   background-color: var(--basic-blue);
   opacity: 0.7;
@@ -59,20 +49,36 @@ img {
   list-style: none;
 }
 
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-black);
-}
-
 .site-navigation a {
   color: var(--basic-white);
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: var(--basic-extra-blue);
+  color: var(--special);
 }
 
-/* Шапка сайта */
+/* Header */
+.header-socials {
+  text-align: center;
+}
+
+.header-socials ul {
+  list-style: none;
+}
+
+.social-link {
+  color: inherit;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--special);
+}
+
+.header-phone {
+  color: var(--basic-white);
+}
 
 .phone:before {
   content: "";
@@ -83,24 +89,6 @@ img {
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
-}
-
-.contacts-list {
-  list-style: none;
-}
-
-.contacts_list_item_paragraph {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 25px;
-}
-
-.contacts_list_item_paragraph:active {
-
-}
-
-.contacts_list_item_paragraph:hover {
-
 }
 
 .main-header .content-container {
@@ -119,15 +107,21 @@ img {
 }
 
 /* Main screen */
-
 .main_screen {
   background-image: url(../files/children_learn_english.jpg);
   background-repeat: no-repeat;
-  height: 960px;
+  height: 658px;
+}
+
+h1 {
+  font-family: 'Spectral SC', Georgia, serif;
+  font-size: 50px;
+  line-height: 46px;
+  font-weight: 700;
+  color: var(--basic-white);
 }
 
 /* Courses */
-
 .courses-list {
   list-style: none;
 }
@@ -142,13 +136,11 @@ img {
 }
 
 /* News */
-
 .news-list {
   list-style: none;
 }
 
 /* Button */
-
 .button {
   font: inherit;
   text-align: center;
@@ -159,7 +151,7 @@ img {
   border: none;
   border-radius: 30px;
   padding: 10px;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover,
@@ -176,38 +168,50 @@ img {
 }
 
 /* Contacts */
+.contacts-list {
+  list-style: none;
+}
+
+.contacts_list_item_paragraph {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.contacts_list_item_paragraph:active {}
+
+.contacts_list_item_paragraph:hover {}
 
 .contacts-phone {
   color: inherit;
 }
 
 /* Карта проезда */
-
 #wrapMap {
-    position: relative;
-    cursor: help;
-    overflow: hidden;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(204, 204, 204);
-    border-image: initial;
+  position: relative;
+  cursor: help;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
 }
+
 .mapTitle {
-    position: absolute;
-    z-index: 1000;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
-    display: none;
-    padding: 5px 20px;
-    border-radius: 5px;
-    background: rgb(255, 255, 255);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(204, 204, 204);
-    border-image: initial;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+  display: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
 }
 
 /* Main footer */
-
 .main-footer {
   color: var(--basic-white);
   background-color: var(--basic-blue);
@@ -236,12 +240,11 @@ img {
 }
 
 /* Social button */
-
 .social-button {
   color: inherit;
 }
 
 .social-button:hover,
 .social-button:focus {
-  background-color: var(--basic-white);
+  color: var(--special);
 }
