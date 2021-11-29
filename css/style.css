@@ -227,6 +227,9 @@ h1 {
 }
 
 .courses-item {
+display: flex;
+flex-direction: column;
+
   text-align: center;
   position: relative;
 
