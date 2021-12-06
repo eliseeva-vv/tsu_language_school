@@ -67,7 +67,8 @@ img {
   background-image: url(../img/children_learn_english.jpg);
   background-repeat: no-repeat;
   background-color: var(--basic-grey);
-  height: 700px;
+  width: 1239px;
+  height: 739px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +112,7 @@ margin-bottom: 20px;
 
 }
 
-.header-phone {
+.main-header-phone {
   padding-left: 35px;
   padding-right: 20px;
   color: var(--basic-white);
@@ -120,7 +121,7 @@ margin-bottom: 20px;
 
 }
 
-.header-phone::before {
+.main-header-phone::before {
   content: "";
   position: absolute;
   top: 0;
@@ -140,20 +141,14 @@ margin-bottom: 20px;
   margin-bottom: 50px;
 }
 
-.main-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 60px;
-  width: 1240px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 .main-header-bar {
+  margin: 0 auto;
+  padding: 0;
   background-color: var(--basic-blue);
   opacity: 0.8;
 }
 
-.site-navigation {
+.header-navigation {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -167,14 +162,14 @@ margin-bottom: 20px;
   /* outline: 5px solid red; */
 }
 
-.site-navigation a {
+.header-navigation a {
   display: block;
   padding: 25px 20px;
   color: var(--basic-white);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.header-navigation a:hover,
+.header-navigation a:focus {
   color: var(--special);
   /* background-color: var(--basic-extra-blue); */
 }
@@ -199,6 +194,23 @@ h1 {
   color: var(--basic-white);
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 120px;
+}
+
+.main-heading-link {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.main-heading-link:hover,
+.main-heading-link:focus {
+  background-color: var(--special);
 }
 
 /* Button */
@@ -319,6 +331,11 @@ color: var(--basic-white);
   font-weight: 700;
 }
 
+.students-image {
+  width: 500px;
+  height: 375px;
+}
+
 /* Index columns */
 .index-columns {
   margin-bottom: 70px;
@@ -386,8 +403,8 @@ color: var(--basic-white);
 }
 
 .gallery-content img {
-  width: 286px;
-  height: 164px;
+  width: 301px;
+  height: 450px;
 }
 
 .gallery-button {
@@ -447,12 +464,9 @@ color: var(--basic-white);
 }
 
 /* Main footer */
-.page-footer {
+.main-footer {
   display: flex;
   align-items: center;
-}
-
-.main-footer {
   padding: 60px 0;
   margin-top: 65px;
   color: var(--basic-white);
