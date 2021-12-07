@@ -3,10 +3,10 @@
   --basic-black: #0A0A0A;
   --basic-white: #FFFAFA;
   --basic-blue: #003153;
-  --basic-extra-blue: #002F55;
+  --basic-dark-blue: #001828;
   --basic-red: #E63244;
-  --special: #ED760E;
   --basic-grey: #4E5754;
+  --special: #ED760E;
 }
 
 /* Visually hidden */
@@ -37,8 +37,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 27px;
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -55,35 +55,32 @@ img {
 
 /* Container */
 .container {
-  width: 1220px;
+  width: 1239px;
   margin: 0 auto;
   padding: 0 10px;
-
 }
 
 /* Main screen */
-
 .main-screen {
   background-image: url(../img/children_learn_english.jpg);
   background-repeat: no-repeat;
   background-color: var(--basic-grey);
-  width: 1239px;
+  width: 1219px;
   height: 739px;
   display: flex;
   flex-direction: column;
   align-items: center;
-margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 /* Main header-top */
-
 .main-header-top {
   width: 1240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .header-socials {
@@ -91,8 +88,6 @@ margin-bottom: 20px;
   padding-left: 20px;
   margin-right: 120px;
   text-align: center;
-  justify-self: center;
-
 }
 
 .header-socials ul {
@@ -108,8 +103,6 @@ margin-bottom: 20px;
 .main-header-logo {
   width: 97px;
   height: 90px;
-  /* justify-self: center; */
-
 }
 
 .main-header-phone {
@@ -118,7 +111,6 @@ margin-bottom: 20px;
   color: var(--basic-white);
   position: relative;
   font-size: 20px;
-
 }
 
 .main-header-phone::before {
@@ -133,33 +125,21 @@ margin-bottom: 20px;
   background-position: 0 0;
 }
 
-/* Main navigation */
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.main-header-bar {
-  margin: 0 auto;
-  padding: 0;
-  background-color: var(--basic-blue);
-  opacity: 0.8;
-}
+/* Header navigation */
 
 .header-navigation {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  width: 1000px;
+  width: 950px;
   margin: 0;
   padding: 0;
   min-height: 70px;
   list-style: none;
   text-transform: uppercase;
-  /* outline: 5px solid red; */
+  background-color: var(--basic-blue);
+  opacity: 0.8;
 }
 
 .header-navigation a {
@@ -171,21 +151,10 @@ margin-bottom: 20px;
 .header-navigation a:hover,
 .header-navigation a:focus {
   color: var(--special);
-  /* background-color: var(--basic-extra-blue); */
+  background-color: var(--basic-dark-blue);
 }
 
-/* Header */
-.main-header {
-  /* margin-bottom: 70px; */
-}
-
-/* Main screen */
-.main_screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* Main heading */
 h1 {
   font-family: 'Playfair Display', Times New Roman, serif;
   font-size: 80px;
@@ -267,21 +236,21 @@ h1 {
 }
 
 .courses-item {
-  min-height: 300px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-align-items: center;
-outline: 1px solid var(--basic-black);
-margin-bottom: 20px;
+  align-items: center;
+  outline: 1px solid var(--basic-black);
+  margin-bottom: 20px;
 }
 
 .courses-item:hover,
 .courses-item:active {
-outline: 4px solid var(--special);
-background-color: var(--basic-blue);
-color: var(--basic-white);
+  outline: 4px solid var(--special);
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
 }
 
 .courses-item h3 {
@@ -302,12 +271,13 @@ color: var(--basic-white);
 
 /* Students */
 .students {
-  padding: 30px;
-  margin-bottom: 80px;
+  padding: 20px 60px 60px;
+  margin-bottom: 70px;
   background-color: var(--basic-blue);
   color: var(--basic-white);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .students h2 {
@@ -323,12 +293,22 @@ color: var(--basic-white);
 
 .students p {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
 .students span {
   font-weight: 700;
+}
+
+.students-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.students-info-text p:last-child {
+  margin-bottom: 60px;
 }
 
 .students-image {
@@ -338,14 +318,14 @@ color: var(--basic-white);
 
 /* Index columns */
 .index-columns {
-  margin-bottom: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .index-columns h2 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /* News */
@@ -372,6 +352,7 @@ color: var(--basic-white);
 
 .news-item p {
   margin: 0;
+  font-size: 16px;
 }
 
 .news-link {
@@ -477,7 +458,6 @@ color: var(--basic-white);
   margin: 0;
   width: 100px;
 } */
-
 .main-footer a {
   color: var(--basic-white);
   text-decoration: none;
@@ -495,7 +475,6 @@ color: var(--basic-white);
 /* .main-footer-navigation {
   width: 600px;
 } */
-
 .footer-socials {
   width: 65px;
   text-align: center;
